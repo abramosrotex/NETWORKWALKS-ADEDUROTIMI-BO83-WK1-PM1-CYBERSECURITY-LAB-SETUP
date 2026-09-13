@@ -4,7 +4,7 @@
 
 A controlled VirtualBox-based cybersecurity laboratory built with Kali Linux and a dedicated NAT Network for authorized penetration testing, network reconnaissance, vulnerability assessment, and security experimentation.
 
-![Lab architecture overview](./images/lab-architecture-overview.png)
+![Lab architecture overview](01-pre-install-title-image.png)
 *High-level view of the lab: Windows 10 host running VirtualBox, with Kali Linux and future target machines connected to a shared NAT Network.*
 
 ---
@@ -149,7 +149,7 @@ IPv6:             Disabled
 
 The /24 network provides the laboratory with the address space `10.0.0.0 – 10.0.0.255`, with usable host addresses available for laboratory systems.
 
-![NAT Network configuration in VirtualBox](./images/nat-network-configuration.jpg)
+![NAT Network configuration in VirtualBox](02-network-configuration.JPG)
 *VirtualBox's NAT Networks manager confirming `NatNetwork` with an IPv4 prefix of `10.0.0.0/24` and DHCP enabled.*
 
 ### Step 4 — Import Kali Linux
@@ -173,7 +173,7 @@ RAM: 2048 MB
 
 A shared folder was also configured to facilitate controlled file transfer between the Windows host and the Kali virtual machine.
 
-![Kali Linux desktop running in VirtualBox](./images/kali-linux-desktop.jpg)
+![Kali Linux desktop running in VirtualBox](03-kali-linux-shot.JPG)
 *Kali Linux 2026.2 running as a VirtualBox guest, confirming a successful import and boot.*
 
 ### Step 5 — Configure Kali Linux Networking
@@ -192,7 +192,7 @@ The resulting CIDR representation is `10.0.0.2/24`.
 
 A consistent address simplifies laboratory documentation and makes it easier to reference the Kali system during subsequent exercises.
 
-![Manual IPv4 configuration on the wired connection](./images/wired-connection-ipv4-settings.jpg)
+![Manual IPv4 configuration on the wired connection](04-Wired-connection-settings.JPG)
 *Manual IPv4 settings on "Wired connection 1" — address `10.0.0.2/24`, gateway `10.0.0.1`, DNS `8.8.8.8`.*
 
 > **Configuration Note:** Because DHCP is enabled on the NAT Network, a manually assigned address should be managed carefully to avoid an address collision with a DHCP lease. For a production-quality lab, either reserve the address appropriately or maintain a clearly defined static-addressing strategy.
