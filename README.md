@@ -415,7 +415,8 @@ Example evidence includes:
 
 *Coding with confidence. Securing with pride.*
 
-LinkedIn: https://www.linkedin.com/in/adedurotimi-aderemi/
+**LinkedIn: https://www.linkedin.com/in/adedurotimi-aderemi/**
+
 ---
 
   ## 📌 Project Information
